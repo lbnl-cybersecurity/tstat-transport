@@ -244,6 +244,7 @@ class TcpCapsule(EntryCapsuleBase):
 
         val_doc = collections.OrderedDict(
             [
+                ('tcp_syn_cnt', self._directional_key('syn_cnt')),
                 ('tcp_rexmit_bytes', self._directional_key('bytes_retx')),
                 ('tcp_rexmit_pkts', self._directional_key('pkts_retx')),
                 ('tcp_rtt_avg', self._directional_key('rtt_avg')),
